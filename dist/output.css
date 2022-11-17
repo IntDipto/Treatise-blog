@@ -1128,16 +1128,12 @@ video {
   background-image: url('./../assets/images/Author/Subscribe.png');
 }
 
-.bg-\[url\(\'\.\.\/assets\/Author\/Subscribe\.png\'\)\] {
-  background-image: url('../assets/Author/Subscribe.png');
+.bg-\[url\(\'\.\.\/assets\/images\/Author\/Subscribe\.png\'\)\] {
+  background-image: url('../assets/images/Author/Subscribe.png');
 }
 
 .bg-\[url\(\'\.\.\/assets\/Terms-Of-Conditons\/banner\.png\'\)\] {
   background-image: url('../assets/Terms-Of-Conditons/banner.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/Author\/Subscribe\.png\'\)\] {
-  background-image: url('../assets/images/Author/Subscribe.png');
 }
 
 .p-4 {
@@ -1916,6 +1912,10 @@ responsive for homepage
     height: 130px;
   }
 
+  .sm\:w-\[141px\] {
+    width: 141px;
+  }
+
   .sm\:w-9 {
     width: 2.25rem;
   }
@@ -1926,10 +1926,6 @@ responsive for homepage
 
   .sm\:w-7 {
     width: 1.75rem;
-  }
-
-  .sm\:w-\[141px\] {
-    width: 141px;
   }
 
   .sm\:w-\[240px\] {

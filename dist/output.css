@@ -1136,6 +1136,10 @@ video {
   background-image: url('../assets/Terms-Of-Conditons/banner.png');
 }
 
+.bg-\[url\(\'\.\.\/assets\/images\/Author\/Subscribe\.png\'\)\] {
+  background-image: url('../assets/images/Author/Subscribe.png');
+}
+
 .p-4 {
   padding: 1rem;
 }

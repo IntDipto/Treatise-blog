@@ -1124,8 +1124,8 @@ video {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\.\.\/assets\/images\/Author\/Subscribe\.png\'\)\] {
-  background-image: url('../assets/images/Author/Subscribe.png');
+.bg-\[url\(\'\.\/assets\/images\/Author\/Subscribe\.png\'\)\] {
+  background-image: url('./assets/images/Author/Subscribe.png');
 }
 
 .bg-\[url\(\'\.\.\/assets\/Author\/Subscribe\.png\'\)\] {

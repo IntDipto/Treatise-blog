@@ -18,7 +18,7 @@
     <!--==============
      header part html 
     ===============-->
-    <header id="header-nav" class="bg-[#F2F4F7] fixed top-0 w-full z-30">
+    <header id="header-nav" class="bg-[#ffffff] fixed top-0 w-full z-30">
         <nav class="">
             <div class="px-6 py-5 flex justify-between border-b border-primary items-center h-[56px] sm:h-fit ">
                 <a href="index.html">
@@ -94,7 +94,7 @@
                                     <span class="text-text">|</span>
                                     <span class="text-text-60">22 June, 2022</span>
                                 </p>
-                                <h4 class="sm:text-[20px] md:text-[22px] lg:text-[26px] 2xl:text-[32px] font-bold mt-11 md:mt-6 lg:mt-11">Nulla facilisi. Pellentes dui ligula, varius non dignissim id, elementum in sem. Suspendisse quis risus tincidunt.</h4>
+                                <h4 class="sm:text-[20px] md:text-[22px] lg:text-[26px] 2xl:text-[32px] font-bold mt-11 md:mt-6 lg:mt-11 text-text">Nulla facilisi. Pellentes dui ligula, varius non dignissim id, elementum in sem. Suspendisse quis risus tincidunt.</h4>
                                 <p class="flex justify-between text-sm mt-4">
                                     <span class="text-[#3A0404]">by James Frankline</span>
                                     <span class="text-text-60">5 mins to read</span>
@@ -398,7 +398,7 @@
         <!--======================= 
         All Posts part  html
         ========================-->
-        <div class="mt-20 mb-20">
+        <div id="all-post" class="mt-20 mb-20">
             <h2 class="text-primary font-bold text-base sm:text-[24px] text-center sm:text-left mx-6 leading-[150%]">All Posts</h2>
             <div class="catagories mx-6 mt-6 ">
                 <ul id="tabs-nav" class="flex gap-x-6 text-text  whitespace-nowrap overflow-x-scroll text-sm sm:text-base scroll-bar">
@@ -861,7 +861,7 @@
      Footer part 
      =========-->
      <footer class="">
-        <div class="flex flex-col lg:flex-row justify-between items-center mx-8 py-6 border-0 lg:border-b">
+        <div class="flex flex-col lg:flex-row justify-between items-center mx-8 py-6 border-0 lg:border-b relative">
             <a href="index.html">
                 <svg width="141" height="40" viewBox="0 0 141 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4639 22.7036C12.3479 18.1372 16.8576 13.1441 18.2326 11.6841V10.1209L17.8288 10.5293C17.5383 10.8226 12.2464 16.2103 9.77139 21.5433C9.56856 21.9809 9.38492 22.4176 9.22412 22.8516C8.78191 24.0448 8.51147 25.2143 8.51147 26.2997C8.51147 33.7788 16.9956 35.173 17.0814 35.1858L17.7283 35.2853L16.5917 33.9944C14.7215 33.5339 9.6252 31.777 9.6252 26.2988C9.6252 25.5277 9.7787 24.7026 10.0464 23.8484C10.104 23.6611 10.4173 22.8543 10.4639 22.7036Z" fill="url(#paint0_linear_339_1181)"/>
@@ -903,7 +903,7 @@
                     </defs>
                 </svg>
             </a>
-            <div class="lg:block hidden">
+            <div class="lg:block hidden absolute left-1/2 -translate-x-1/2">
                 <ul class="flex gap-x-8 text-text">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./src/membership.html">Membership</a></li>

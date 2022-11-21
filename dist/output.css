@@ -1084,9 +1084,9 @@ video {
   border-color: rgb(6 11 37 / var(--tw-border-opacity));
 }
 
-.bg-\[\#F2F4F7\] {
+.bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 244 247 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F8F8F8\] {
@@ -1513,7 +1513,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   animation-name: rotate;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }

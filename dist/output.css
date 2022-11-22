@@ -597,6 +597,10 @@ video {
   z-index: 30;
 }
 
+.m-\[10px\] {
+  margin: 10px;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -605,11 +609,6 @@ video {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .my-10 {
@@ -675,10 +674,6 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
-}
-
-.ml-\[10px\] {
-  margin-left: 10px;
 }
 
 .mt-1 {
@@ -900,6 +895,10 @@ video {
 .columns-1 {
   -moz-columns: 1;
        columns: 1;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-1 {

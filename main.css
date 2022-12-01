@@ -20,6 +20,50 @@ body {
     height: calc(100vh - 80px);
 }
 
+/* custom search bar  */
+.input-box {
+    transition: all 0.6s cubic-bezier(0.58, 0, 0.5, 1);
+  }
+  .input-box.open {
+    max-width: 320px;
+    margin-right: 26px !important;
+  }
+  .input-box input {
+    @apply relative outline-none h-full w-full rounded-[8px] text-sm;
+    margin-right: 26px !important;
+  }
+  .input-box.open {
+    @apply border;
+    padding: 0 0 0 50px;
+    margin-right: 26px !important;
+  }
+  .icon {
+    @apply absolute h-full top-0 left-0 w-[50px] rounded-[8px] flex justify-center bg-white;
+  }
+  .search-icon {
+    @apply absolute top-1/2 text-sm;
+    transition: all 0.6s cubic-bezier(0.58, 0, 0.12, 1);
+  }
+  .close-icon {
+    @apply absolute top-1/2 text-sm;
+    transition: all 0.1s cubic-bezier(0.58, 0, 0.12, 1);
+  }
+  .search-icon {
+    color: #5c77ff;
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .input-box.open .search-icon {
+    transform: translateY(-50%) rotate(0);
+  }
+  .close-icon {
+    @apply text-white opacity-0 cursor-pointer -translate-y-1/2 -right-8;
+  }
+  .input-box.open .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
 /*===============
  homepage
 =================*/
@@ -245,3 +289,74 @@ responsive for homepage
         width: calc(25% - 20px);
     }
 }
+
+/* ======================
+login & signup page 
+=========================*/
+
+/* bg for log in & sign up pages  */
+.login-signup-bg{
+    background: url(./assets/images/nav-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-container{
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* custom checkbox */
+.custom-input {
+    @apply block relative pl-6 mb-0 cursor-pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .custom-input input {
+    @apply absolute opacity-0 cursor-pointer h-0 w-0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    @apply h-4 w-4 top-0 left-0 absolute bg-white border-primary border-[2px] rounded-[2px] mt-[1px];
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .custom-input:hover input ~ .checkmark {
+    background-color:white;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .custom-input input:checked ~ .checkmark {
+    background-color: white;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .custom-input input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .custom-input .checkmark:after {
+    @apply border border-primary left-[4px] top-0 w-[4.5px] h-[10px]; 
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+  
+
+ 

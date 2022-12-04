@@ -5,7 +5,6 @@ $(document).ready(function(){
         $('#nav-items').toggleClass('!opacity-100 !visible');
         $('.left-half').toggleClass('!top-0 !opacity-100 !visible');
         $('.right-half').toggleClass('!top-0 !opacity-100 !visible');
-
     })
 })
 

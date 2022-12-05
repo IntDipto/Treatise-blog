@@ -8,7 +8,7 @@ body {
 }
 
 /*==============
- menu 
+    menu 
 =============== */
 
 #nav-items {
@@ -69,7 +69,7 @@ body {
   }
 
 /*===============
- homepage
+    homepage
 =================*/
 
 #circle { position: relative; width: 100%; padding-bottom: 0%; overflow: hidden; }
@@ -168,12 +168,10 @@ body {
 }
 
 
-/* ==============
-membership page 
-================= */
-/* .blog-price{
-    font-weight: 900;
-} */
+/* =====================
+    membership page 
+========================= */
+
 
 .td-sytle {
     @apply py-4 px-2 text-text font-bold whitespace-nowrap text-sm sm:text-base;
@@ -210,18 +208,18 @@ membership page
     display: block;
 }
 
-/*=====================
-terms of services page 
- ========================*/
+/*===========================
+    terms of services page 
+ ============================*/
 
 .error-part button {
     font-family: 'Arima Madurai', cursive;
 }
 
 
-/* ======================
-terms of services page 
-=========================*/
+/* ============================
+    terms of services page 
+===============================*/
 
 
 /* for slider  */
@@ -295,7 +293,7 @@ responsive for homepage
 }
 
 /* ======================
-login & signup page 
+    login & signup page 
 =========================*/
 
 /* bg for log in & sign up pages  */
@@ -311,58 +309,58 @@ login & signup page
 
 /* custom checkbox */
 .custom-input {
-    @apply block relative pl-6 mb-0 cursor-pointer;
+@apply block relative pl-6 mb-0 cursor-pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .custom-input input {
+}
+
+/* Hide the browser's default checkbox */
+.custom-input input {
     @apply absolute opacity-0 cursor-pointer h-0 w-0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     @apply h-4 w-4 top-0 left-0 absolute bg-white border-primary border-[2px] rounded-[2px] mt-[1px];
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .custom-input:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.custom-input:hover input ~ .checkmark {
     background-color:white;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .custom-input input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-input input:checked ~ .checkmark {
     background-color: white;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .custom-input input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.custom-input input:checked ~ .checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .custom-input .checkmark:after {
-    @apply border border-primary left-[4px] top-0 w-[4.5px] h-[10px]; 
+}
+
+/* Style the checkmark/indicator */
+.custom-input .checkmark:after {
+@apply border border-primary left-[4px] top-0 w-[4.5px] h-[10px]; 
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 
-/*======== 
-all blog 
-==========*/
+/*===============
+    all blog 
+==================*/
 .all-blog-banner{
     background-repeat: no-repeat; 
     background-position: center;
@@ -431,3 +429,5 @@ all blog
 .flatpickr-day{
     border-radius: 4px ;
 }
+
+

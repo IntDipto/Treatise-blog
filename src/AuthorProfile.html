@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>treatise-all Blog</title>
+    <title>Treatise-Author</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -127,29 +127,72 @@
         </nav>
     </header>
 
-    <main class="mt-[56px] sm:mt-[87px]">
-        <!-- banner part  -->
+    <main class="mt-[87px]">
 
-        <div class="all-blog-banner flex justify-center bg-[url('../assets/images/All-blog/all-blog-banner.webp')]">
-            <div class="w-[1180px] py-[64px] text-center mx-5">
-                <p class="text-text font-bold text-base sm:text-[24px] md:text-[48px] leading-[150%] md:leading-[60px]">“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.”</p>
-                <p class="italic text-xs md:text-base text-text-60 mt-2 md:mt-6">-George R.R. Martin</p>
+        <!-- banner and name details  -->
+       <div class="banner-name">
+            <div class="h-[180px] w-full bg-[url('../assets/images/Author-Profile/author-profile.webp')]">
             </div>
-        </div>
+            
+            <div class="-mt-[90px] mx-[15%]">
+                <div class="flex gap-x-5 items-end">
+                    <div class="profile-pic relative">
+                        <img class="border-[4px] border-[#7A7A7A]/60 rounded-full" src="../assets/images/Author-Profile/avatar.webp" alt="">
+                        <div class="absolute bottom-4 right-0">
+                            <label for="image">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_808_4575)">
+                                    <path d="M4 20C4 31.0457 12.9543 40 24 40C35.0457 40 44 31.0457 44 20C44 8.95431 35.0457 0 24 0C12.9543 0 4 8.95431 4 20Z" fill="white"/>
+                                    <path d="M32.2788 28.6904H15.7256C15.2866 28.6904 14.8656 28.516 14.5551 28.2055C14.2447 27.8951 14.0703 27.4741 14.0703 27.035V15.4479C14.0703 15.0088 14.2447 14.5878 14.5551 14.2774C14.8656 13.9669 15.2866 13.7925 15.7256 13.7925H17.5442C18.4763 13.7925 19.3468 13.3267 19.8639 12.5511C20.381 11.7754 21.2515 11.3096 22.1836 11.3096H25.8207C26.7529 11.3096 27.6234 11.7754 28.1405 12.5511C28.6575 13.3267 29.528 13.7925 30.4602 13.7925H32.2788C32.7178 13.7925 33.1388 13.9669 33.4492 14.2774C33.7597 14.5878 33.9341 15.0088 33.9341 15.4479V27.035C33.9341 27.4741 33.7597 27.8951 33.4492 28.2055C33.1388 28.516 32.7178 28.6904 32.2788 28.6904Z" fill="white" stroke="#0095C0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23.9979 24.5522C26.0549 24.5522 27.7223 22.8847 27.7223 20.8277C27.7223 18.7708 26.0549 17.1033 23.9979 17.1033C21.9409 17.1033 20.2734 18.7708 20.2734 20.8277C20.2734 22.8847 21.9409 24.5522 23.9979 24.5522Z" fill="white" stroke="#0095C0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_808_4575" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_808_4575"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_808_4575" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </label>
+                            <input class="hidden" id="image" type="file">
+                        </div>
+                    </div>
 
-        <!-- all post  -->
-        <div class="mx-4 md:mx-6 py-6">
-            <div class="flex items-center justify-between">
-                <div class="">
-                    <select class="border-2 h-[44px] text-text-60 font-bold rounded-[8px] outline-none" name="" id="">
-                        <option value="sort">Sort</option>
-                        <option value="New">New</option>
-                        <option value="Popular">Popular</option>
-                        <option value="Featured">Featured</option>
-                    </select>
+                    <div class="name-btn flex justify-between w-full items-center">
+                        <div class="name">
+                            <h2 class="text-[24px] text-[#393E50] font-black">{{First Name Last Name}}</h2>
+                            <p class="text-text-40 text-base mt-2">{{username}}</p>
+                        </div>
+                        <div class="edit-btn">
+                            <button class="flex gap-x-3 border border-primary/90 px-10 py-3 rounded-[8px]">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="#283683" stroke-opacity="0.9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 3.75V20.25" stroke="#283683" stroke-opacity="0.9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="text-sm font-bold text-primary/90">Create Blog</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="items-menu hidden lg:block">
-                    <ul class="flex xl:gap-x-4 2xl:gap-x-6 text-text  whitespace-nowrap overflow-x-scroll text-sm 2xl:text-base scroll-bar">
+            </div>
+       </div>
+
+
+       <!-- menu tabs & details  -->
+       <div class="mx-[15%]">
+
+            <!-- tabs menu  -->
+            <div class="flex justify-center">
+                <div class="items-menu overflow-x-scroll scroll-bar my-8">
+                    <ul class="flex gap-x-6 text-text  whitespace-nowrap text-sm">
                         <li data-filter="*" class="px-7 py-3 cursor-pointer blog-active-btn font-bold">All</li>
                         <li data-filter=".Career_growth" class="px-7 py-3 cursor-pointer font-bold">Career & Growth</li>
                         <li data-filter=".Process" class="px-7 py-3 cursor-pointer font-bold">Process</li>
@@ -157,385 +200,212 @@
                         <li data-filter=".Design_system" class="px-7 py-3 cursor-pointer font-bold">Design System</li>
                     </ul>
                 </div>
-                <div id="click" class="px-4 md:px-7 py-3 border-2 rounded-[10px] cursor-pointer">
-                    <span class="flex items-center gap-x-2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.6">
-                            <path d="M9.5625 12.0938H2.8125" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.1875 12.0938H11.8125" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5.0625 5.90625H2.8125" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.1875 5.90625H7.3125" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7.3125 4.21875V7.59375" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.8125 13.7812V10.4062" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                        </svg>
-                        <span class="text-text-60 font-bold text-sm">Filter</span>    
-                    </span>
-                </div>
             </div>
 
-            <div class="for-mobile lg:hidden mt-6 flex justify-center">
-                <div class="items-menu overflow-x-scroll scroll-bar">
-                    <ul class="flex gap-x-4 text-text  whitespace-nowrap text-sm">
-                        <li data-filter="*" class="px-7 py-3 cursor-pointer blog-active-btn font-bold">All</li>
-                        <li data-filter=".Career_growth" class="px-7 py-3 cursor-pointer font-bold">Career & Growth</li>
-                        <li data-filter=".Process" class="px-7 py-3 cursor-pointer font-bold">Process</li>
-                        <li data-filter=".Product" class="px-7 py-3 cursor-pointer font-bold">Product</li>
-                        <li data-filter=".Design_system" class="px-7 py-3 cursor-pointer font-bold">Design System</li>
-                    </ul>
+            <!-- option 01 : personal details -->
+            <div class="p-4 shadow-lg rounded-[6px]">
+                <div class="flex justify-between">
+                    <h2 class="text-lg font-normal text-primary">All personal information</h2>
+                    <button class="flex items-center gap-x-[10px]">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.00001 20.2499H4.5C4.30109 20.2499 4.11033 20.1709 3.96967 20.0302C3.82902 19.8896 3.75 19.6988 3.75 19.4999V15.3093C3.74966 15.2119 3.76853 15.1154 3.80553 15.0253C3.84253 14.9352 3.89694 14.8533 3.96563 14.7843L15.2156 3.53429C15.2854 3.46343 15.3686 3.40715 15.4603 3.36874C15.5521 3.33033 15.6505 3.31055 15.75 3.31055C15.8495 3.31055 15.9479 3.33033 16.0397 3.36874C16.1314 3.40715 16.2146 3.46343 16.2844 3.53429L20.4656 7.71554C20.5365 7.78533 20.5928 7.86851 20.6312 7.96025C20.6696 8.052 20.6894 8.15046 20.6894 8.24992C20.6894 8.34938 20.6696 8.44784 20.6312 8.53958C20.5928 8.63132 20.5365 8.71451 20.4656 8.78429L9.00001 20.2499Z" stroke="#283683" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.25 20.25H9" stroke="#283683" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.75 6L18 11.25" stroke="#283683" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="text-primary font-bold text-sm">Edit</span>
+                    </button>
                 </div>
-            </div>
 
-            <!-- filter on click  -->
-            <div  id="post-filter"  class="w-full">
-                <div class="mt-7 flex flex-col md:flex-row md:flex-wrap items-end gap-x-10 2xl:gap-x-6 gap-y-4 md:justify-center">
-                    <div class="flex flex-col gap-y-2 w-full md:w-fit">
-                        <label class="text-sm md:text-base" for="author_tag">Search By Tag,Topic or Author</label>
-                        <input class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="text" placeholder="search by author, tag, blog">
-                    </div>
-
-                    <div class="flex flex-col gap-y-2 w-full md:w-fit">
-                        <label class="text-sm md:text-base" for="author_tag">Timeframe</label>
-                        <input class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="text" placeholder="Timeframe">
-                    </div>
-
-                    <div class="flex flex-col gap-y-2 w-full md:w-fit">
-                        <label class="text-sm md:text-base" for="author_tag">Time</label>
-                        <div class="relative">
-                            <input id="flatpickr" class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="date" placeholder="All Time">
-                            <span class="absolute right-4 top-1/2 -translate-y-1/2">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p class="text-xs font-normal text-text/40 mt-10">About me</p>
+                <p class="py-6 text-sm text-text border-b border-text/5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="py-6 flex flex-col gap-y-4 border-b border-text/5">
+                    <div class="py-4 flex">
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#060B25" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z" stroke="#060B25" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{address}}</p>
+                                <p class="text-xs text-text/40">Location</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.4">
-                                    <path d="M19.5 4.25H4.5C4.08579 4.25 3.75 4.58579 3.75 5V20C3.75 20.4142 4.08579 20.75 4.5 20.75H19.5C19.9142 20.75 20.25 20.4142 20.25 20V5C20.25 4.58579 19.9142 4.25 19.5 4.25Z" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16.5 2.75V5.75" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.5 2.75V5.75" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M3.75 8.75H20.25" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.625 14.75H9.375" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 12.125V17.375" stroke="#060B25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.50391 11.9068C10.2757 13.5006 11.5644 14.786 13.1602 15.5537C13.2779 15.6094 13.4081 15.6336 13.5379 15.6237C13.6678 15.6138 13.7928 15.5703 13.9008 15.4974L16.2445 13.9318C16.3481 13.8616 16.4677 13.8187 16.5923 13.8073C16.7169 13.7958 16.8424 13.8161 16.957 13.8662L21.3445 15.7506C21.4945 15.813 21.6198 15.923 21.7011 16.0636C21.7824 16.2042 21.8152 16.3676 21.7945 16.5287C21.6555 17.6141 21.1257 18.6116 20.3043 19.3346C19.483 20.0576 18.4263 20.4566 17.332 20.4568C13.9505 20.4568 10.7075 19.1135 8.31642 16.7224C5.92533 14.3313 4.58203 11.0883 4.58203 7.70682C4.58228 6.61257 4.98123 5.55589 5.70424 4.73453C6.42725 3.91316 7.42478 3.38338 8.51016 3.24432C8.67125 3.22362 8.83469 3.25646 8.97529 3.33777C9.11589 3.41909 9.22587 3.54437 9.28828 3.69432L11.1727 8.09119C11.2217 8.20402 11.2422 8.32717 11.2323 8.44978C11.2225 8.5724 11.1827 8.69072 11.1164 8.79432L9.55078 11.1756C9.48108 11.2833 9.44017 11.4071 9.43196 11.5351C9.42376 11.6631 9.44853 11.7911 9.50391 11.9068V11.9068Z" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{number}}</p>
+                                <p class="text-xs text-text/40">Phone Number</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-4 flex">
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#060B25" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z" stroke="#060B25" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{email}}</p>
+                                <p class="text-xs text-text/40">Email Address</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M12.6797 8.64453V6.39453" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6797 6.39453C17.0109 4.89453 12.6797 1.14453 12.6797 1.14453C12.6797 1.14453 8.17969 4.89453 12.6797 6.39453Z" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.8672 12.207C15.8672 13.0524 15.5314 13.8632 14.9336 14.4609C14.3358 15.0587 13.5251 15.3945 12.6797 15.3945C11.8343 15.3945 11.0236 15.0587 10.4258 14.4609C9.82801 13.8632 9.49219 13.0524 9.49219 12.207" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.49221 12.2071C9.49238 13.0412 9.16558 13.8421 8.58193 14.4381C7.99828 15.034 7.20428 15.3774 6.37033 15.3946C4.57971 15.4321 3.11721 13.9321 3.11721 12.1414V10.8946C3.11597 10.5987 3.17332 10.3056 3.28595 10.032C3.39859 9.75851 3.56427 9.50997 3.77345 9.3008C3.98263 9.09162 4.23116 8.92593 4.5047 8.8133C4.77825 8.70066 5.07139 8.64331 5.36721 8.64455H19.9922C20.288 8.64331 20.5812 8.70066 20.8547 8.8133C21.1283 8.92593 21.3768 9.09162 21.586 9.3008C21.7951 9.50997 21.9608 9.75851 22.0735 10.032C22.1861 10.3056 22.2434 10.5987 22.2422 10.8946V12.1414C22.2422 13.9321 20.7797 15.4321 18.9891 15.3946C18.1551 15.3774 17.3611 15.034 16.7775 14.4381C16.1938 13.8421 15.867 13.0412 15.8672 12.2071" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.9297 14.7656V19.8937C20.9297 20.0927 20.8507 20.2834 20.71 20.4241C20.5694 20.5647 20.3786 20.6437 20.1797 20.6437H5.17969C4.98078 20.6437 4.79001 20.5647 4.64936 20.4241C4.50871 20.2834 4.42969 20.0927 4.42969 19.8937V14.7656" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>  
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{birthdate}}</p>
+                                <p class="text-xs text-text/40">Date of birth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-6 flex flex-col gap-y-4 border-b border-text/5">
+                    <div class="py-4 flex">
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M15.8154 4H13.1571C11.5796 4 9.82498 4.66348 9.82498 6.95017C9.83268 7.74693 9.82498 8.51 9.82498 9.36879H8V12.2729H9.88145V20.6332H13.3387V12.2177H15.6206L15.8271 9.36064H13.2791C13.2791 9.36064 13.2848 8.0897 13.2791 7.72061C13.2791 6.81696 14.2194 6.86871 14.276 6.86871C14.7234 6.86871 15.5934 6.87002 15.8167 6.86871V4H15.8154Z" fill="#060B25"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{www.facebook.com/username}}</p>
+                                <p class="text-xs text-text/40">Facebook</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M7.26441 20.0529V9.29124H3.6874V20.0529H7.26479H7.26441ZM5.47666 7.82217C6.72377 7.82217 7.50018 6.99581 7.50018 5.96308C7.47684 4.90682 6.72377 4.10352 5.50037 4.10352C4.27613 4.10352 3.47656 4.90682 3.47656 5.96299C3.47656 6.99571 4.2527 7.82208 5.45322 7.82208H5.47637L5.47666 7.82217ZM9.24434 20.0529H12.8211V14.0438C12.8211 13.7225 12.8444 13.4005 12.9389 13.1711C13.1974 12.5282 13.7859 11.8627 14.7743 11.8627C16.0683 11.8627 16.5862 12.8495 16.5862 14.2963V20.0529H20.1629V13.8825C20.1629 10.5771 18.3984 9.03894 16.0451 9.03894C14.1157 9.03894 13.2683 10.1173 12.7975 10.8518H12.8213V9.29162H9.24452C9.29121 10.3012 9.24424 20.0533 9.24424 20.0533L9.24434 20.0529Z" fill="#060B25"/>
                                     </g>
                                 </svg>
-                            </span>
+                                    
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{www.linkedin.com/username}}</p>
+                                <p class="text-xs text-text/40">Linkedin</p>
+                            </div>
                         </div>
                     </div>
 
-                   <div class="w-full 2xl:w-fit flex justify-center mt-4 2xl:mt-0">
-                        <button class="w-[283px] py-[13.5px] bg-text-10 rounded-[5px] text-text-40">Clear</button>
-                   </div>
+                    <div class="py-4 flex">
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M8.59745 19.4703C15.3142 19.4703 18.9873 13.9037 18.9873 9.07658C18.9873 8.91849 18.9841 8.76113 18.977 8.60441C19.6917 8.08707 20.3085 7.44651 20.7985 6.71278C20.1442 7.00378 19.4401 7.19963 18.7015 7.28794C19.4554 6.83571 20.0342 6.12026 20.3073 5.26745C19.5904 5.69284 18.8062 5.99271 17.9885 6.15415C17.3221 5.44409 16.3734 5 15.323 5C13.3064 5 11.6711 6.63594 11.6711 8.65249C11.6711 8.93919 11.7032 9.21796 11.7658 9.48544C8.73087 9.33267 6.03967 7.87905 4.23859 5.66875C3.9142 6.22623 3.74357 6.85982 3.74414 7.50481C3.74414 8.7722 4.38879 9.89101 5.36915 10.5456C4.78926 10.5279 4.22209 10.3712 3.71534 10.0887C3.7148 10.104 3.7148 10.119 3.7148 10.1353C3.7148 11.9044 4.9735 13.3815 6.64439 13.7162C6.33057 13.8017 6.00675 13.845 5.6815 13.8448C5.44661 13.8448 5.21769 13.8217 4.99521 13.7789C5.4601 15.2304 6.80816 16.2866 8.40644 16.3161C7.1566 17.2961 5.58219 17.8798 3.87104 17.8798C3.57995 17.88 3.2891 17.8631 3 17.8292C4.61612 18.8654 6.5351 19.4701 8.59763 19.4701" fill="#060B25"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{www.twitter.com/username}}</p>
+                                <p class="text-xs text-text/40">Twitter</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M6.76875 5C10.5072 5 13.5375 8.05147 13.5375 11.8152C13.5375 15.5791 10.5069 18.6303 6.76875 18.6303C3.03075 18.6303 0 15.5791 0 11.8152C0 8.05156 3.03047 5 6.76875 5ZM17.5781 5.39919C19.4473 5.39919 20.9626 8.2715 20.9626 11.8152C20.9626 15.3582 19.4476 18.2313 17.5785 18.2313C15.7094 18.2313 14.194 15.3582 14.194 11.8152C14.194 8.27244 15.7089 5.39919 17.5781 5.39919ZM22.8097 6.06753C23.4669 6.06753 24 8.64088 24 11.8153C24 14.9888 23.4671 17.5632 22.8097 17.5632C22.1522 17.5632 21.6196 14.9895 21.6196 11.8153C21.6196 8.64106 22.1525 6.06753 22.8097 6.06753Z" fill="#060B25"/>
+                                    </g>
+                                </svg>
+                                    
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{www.medium.com/username}}</p>
+                                <p class="text-xs text-text/40">Medium</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- all post part  -->
-            <div class="mt-12 items-container grid grid-cols-4">
-
-                <a href="" class="items Career_growth m-[10px]">
-                    <div class="border rounded-[10px] h-fit ">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b1.webp" alt="">
-                        <div class="p-4">
-                            <p class="flex text-xs md:text-sm justify-between md:justify-start md:gap-x-2">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text hidden md:block">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
+                <div class="py-6 flex flex-col gap-y-4 border-b border-text/5">
+                    <div class="py-4 flex">
+                        <div class="flex items-center gap-x-2  w-1/2">
+                            <div class="w-10 h-10 bg-text/5 flex items-center justify-center">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M20.9297 6.75195H4.42969C4.01547 6.75195 3.67969 7.08774 3.67969 7.50195V19.502C3.67969 19.9162 4.01547 20.252 4.42969 20.252H20.9297C21.3439 20.252 21.6797 19.9162 21.6797 19.502V7.50195C21.6797 7.08774 21.3439 6.75195 20.9297 6.75195Z" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.4297 6.75195V5.25195C16.4297 4.85413 16.2717 4.4726 15.9903 4.19129C15.709 3.90999 15.3275 3.75195 14.9297 3.75195H10.4297C10.0319 3.75195 9.65033 3.90999 9.36903 4.19129C9.08772 4.4726 8.92969 4.85413 8.92969 5.25195V6.75195" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.6797 11.8418C18.9443 13.4238 15.8396 14.2549 12.6797 14.2512C9.51923 14.2594 6.41332 13.4279 3.67969 11.8418" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.5547 11.252H13.8047" stroke="#060B25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="">
+                                <p class="text-sm text-text">{{job title, company name}}</p>
+                                <p class="text-xs text-text/40">Current Profession</p>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <a href=" 
-                " class="items Process m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b2.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
+                <div class="interest-in py-10 border-b border-text/5">
+                    <p class="text-xs text-text/40">Interest In</p>
+                    <div class="mt-6 flex flex-wrap gap-x-2 gap-y-4 w-[90%]">
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
+                        <button class="text-xs text-primary px-4 py-2 bg-primary-10 rounded-[100px]">{{tags}}</button>
                     </div>
-                </a>
+                </div>
 
-                <a href="" class="items Career_growth  m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b3.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
+                <div class="interest-in py-10 border-b border-text/5">
+                    <p class="text-xs text-text/40">Security</p>
+                    <div class="mt-6 flex justify-between">
+                        <div class="py-3 flex gap-x-20 items-center">
+                            <p class="text-primary text-base">Password</p>
+                            <p class="text-[#393E50]">******************</p>
                         </div>
+                        <button class="px-5 py-3 bg-text text-white rounded-[6px] text-sm">Edit Password</button>
                     </div>
-                </a>
-
-                <a href="" class="items Process m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b4.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Product m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b5.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Career_growth m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b6.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Design_system m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b7.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Product m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b8.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div> 
-                </a>
-
-                <a href="./src/SingleBlog.html" class="items Career_growth m-[10px]">
-                    <div class="border rounded-[10px] h-fit ">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b9.webp" alt="">
-                        <div class="p-4">
-                            <p class="flex text-xs md:text-sm justify-between md:justify-start md:gap-x-2">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text hidden md:block">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./src/SingleBlog.html" class="items Process m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b10.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Career_growth  m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b11.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Process m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b12.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Product m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b13.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Career_growth m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b14.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Design_system m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b15.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="items Product m-[10px]">
-                    <div class="border rounded-[10px] h-fit">
-                        <img class="w-full rounded-t-[10px]" src="../assets/images/All-blog/all-b16.webp" alt="">
-                         <div class="p-4">
-                            <p class="flex gap-x-2 text-xs md:text-sm">
-                                <span class="text-primary">#Career & Growth</span>
-                                <span class="text-text">|</span>
-                                <span class="text-text-60">22 June, 2022</span>
-                            </p>
-                            <p class="text-base md:text-[18px] text-text font-bold mt-4">10 things nobody told your about Being a web designer!</p>
-                            <p class="flex justify-between text-xs sm:text-sm mt-4">
-                                <span class="text-text">by James Frankline</span>
-                                <span class="text-text-60">5 mins to read</span>
-                            </p>
-                        </div>
-                    </div> 
-                </a>
+                </div>
 
             </div>
 
-            <!-- .pagination  -->
-            <div class="mt-16 mb-12 flex justify-center">
-                <ul class="flex gap-x-4 items-center">
-                    <li><button class="text-text-40 text-xs font-bold">Prev</button></li>
-                    <li><button class="text-xs font-bold h-8 w-8 border rounded-[5px] bg-primary text-white">1</button></li>
-                    <li><button class="text-text-40 text-xs font-bold h-8 w-8 border rounded-[5px]">2</button></li>
-                    <li><button class="text-text-40 text-xs font-bold h-8 w-8 border rounded-[5px]">3</button></li>
-                    <li><button class="text-text-40 text-xs font-bold h-8 w-8 border rounded-[5px]">4</button></li>
-                    <li><button class="text-text-40 text-xs font-bold">Next</button></li>
-
-                </ul>
-            </div>
         </div>
 
-
-
+       
+       
     </main>
-
 
     <!--=========
     Footer part 
@@ -638,46 +508,13 @@
             <p class="text-sm text-text mt-4 lg:mt-0">Powerd by Intelli Digital</p>
         </div>
     </footer>
-   
-
-    
-    <!-- js files  -->
-    <script src="./../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="./js/jquery.nice-select.js"></script>
-    <script src="./../assets/js/script.js"></script>
-    <script src="./js/customSearch.js"></script>
-
-    <script>
-
-        // custome date picker 
-        var example = flatpickr('#flatpickr');
 
 
-        //  Isotope for filter
-        var $grid = $('.items-container').isotope({
-        });
-        $('.items-menu ul li').on( 'click', function() {
-            $(".items-menu ul li").removeClass('blog-active-btn');
-            $(this).addClass('blog-active-btn');
-
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-        });
-
-        // fitler showing 
-        $( "#click" ).click(function() {
-            $( "#post-filter" ).slideToggle( "slow")
-        })
-
-        $(document).ready(function() {
-        $('select').niceSelect();
-      })
-    </script>
-
-   
-
+     <!-- js files  -->
+     <script src="./../assets/js/jquery-3.6.1.min.js"></script>
+     <script src="./js/jquery.nice-select.js"></script>
+     <script src="./../assets/js/script.js"></script>
+     <script src="./js/customSearch.js"></script>
     
 </body>
 </html>

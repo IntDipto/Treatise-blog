@@ -430,4 +430,26 @@ responsive for homepage
     border-radius: 4px ;
 }
 
-
+.tags-input-wrapper input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 140px;
+    margin-left: 8px;
+    /* margin-bottom: 8px; */
+}
+.tags-input-wrapper .tag{
+    display: inline-block;
+    background-color: rgba(6, 11, 37, 0.1);
+    color: #060B25;
+    border-radius: 40px;
+    padding: 2px 5px 0px 10px;
+    font-size: 12px;
+    margin: 0px 5px 5px 5px;
+   
+}
+.tags-input-wrapper .tag a {
+    margin: 0 7px 3px;
+    display: inline-block;
+    cursor: pointer;
+}

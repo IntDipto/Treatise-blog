@@ -430,6 +430,10 @@ responsive for homepage
     border-radius: 4px ;
 }
 
+/*==============================
+    author-profile-settings 
+===============================*/
+
 .tags-input-wrapper input{
     border: none;
     background: transparent;
@@ -452,4 +456,25 @@ responsive for homepage
     margin: 0 7px 3px;
     display: inline-block;
     cursor: pointer;
+}
+.person-details{
+    box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2), 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+}
+
+/* tooltip coding  */
+.btn-container span::after{
+    @apply shadow-md;
+    content: '';
+    height: 10px;
+    width: 10px; 
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+.btn-container:hover .tooltip{
+    @apply opacity-100 transition duration-500;
 }

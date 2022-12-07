@@ -201,7 +201,7 @@
 
             <div class="">
                 <!-- option 01 : personal details -->
-                <div class="profile mx-4 md:mx-[15%]">
+                <div id="profile" class="mx-4 md:mx-[15%]">
 
                     <div class="px-2 sm:px-4 py-4 person-details rounded-[6px] w-full">
 
@@ -518,7 +518,7 @@
                 </div>
 
                 <!-- option 02 : Drafts  -->
-                <div class="drafts mt-10 mx-6 hidden">
+                <div id="drafts" class="mt-10 mx-6 hidden">
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
@@ -983,7 +983,7 @@
                 </div>
 
                 <!-- option 03 : Published  -->
-                <div class="published mt-10 mx-6 hidden">
+                <div id="published" class="mt-10 mx-6 hidden">
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
@@ -1361,7 +1361,7 @@
 
 
                 <!-- option 04 : Archived  -->
-                <div class="archived mt-10 mx-6 hidden">
+                <div id="archived" class="mt-10 mx-6 hidden">
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
@@ -1883,8 +1883,35 @@
             $(".items-menu ul li").removeClass('blog-active-btn');
             $(this).addClass('blog-active-btn');
             console.log($(this).attr('data-filter'));
+            if($(this).attr('data-filter') === 'profie' ){
+                $('#profile').show(300);
+                $('#drafts').hide(300);
+                $('#published').hide(300);
+                $('#archived').hide(300);
+            }
+            if($(this).attr('data-filter') === 'drafts' ){
+                $('#profile').hide(300);
+                $('#drafts').show(300);
+                $('#published').hide(300);
+                $('#archived').hide(300);
+            }
+            if($(this).attr('data-filter') === 'published' ){
+                $('#profile').hide(300);
+                $('#drafts').hide(300);
+                $('#published').show(300);
+                $('#archived').hide(300);
+            }
+            if($(this).attr('data-filter') === 'archived' ){
+                $('#profile').hide(300);
+                $('#drafts').hide(300);
+                $('#published').hide(300);
+                $('#archived').show(300);
+            }
+
         });
 
+
+        // for profile info, editing , password options 
          $("#edit-profile-btn").click(function(){
              $('#profile-info').hide(300);
              $('#edit-password').hide(300);
@@ -1895,6 +1922,7 @@
              $('#edit-password').show(300);
              $("#profile-edit").hide(300);
          });
+
      </script>
     
 </body>

@@ -245,7 +245,7 @@ responsive for homepage
 
 @media screen and (max-width: 640px) {
     .items {
-        width: calc(100% - 20px);
+        width: calc(100% - 24px);
     }
     .owl-carousel .owl-nav {
         @apply absolute top-full left-1/2 -translate-x-1/2;
@@ -258,7 +258,7 @@ responsive for homepage
 
 @media (min-width: 641px) and (max-width: 768px) {
     .items {
-        width: calc(50% - 20px);
+        width: calc(50% - 24px);
     }
    
     .owl-carousel .owl-nav {
@@ -269,7 +269,7 @@ responsive for homepage
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .items {
-        width: calc(50% - 20px);
+        width: calc(50% - 24px);
     }
     .owl-carousel .owl-nav {
         @apply absolute top-full left-1/2 -translate-x-1/2;
@@ -278,7 +278,7 @@ responsive for homepage
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .items {
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 24px);
     }
     .owl-carousel .owl-nav {
         @apply absolute -top-[25%] -translate-x-1/2;
@@ -288,7 +288,7 @@ responsive for homepage
 
 @media (min-width: 1281px) {
     .items {
-        width: calc(25% - 20px);
+        width: calc(25% - 24px);
     }
 }
 
@@ -477,4 +477,14 @@ responsive for homepage
 
 .btn-container:hover .tooltip{
     @apply opacity-100 transition duration-500;
+}
+
+
+/* text-editor  */
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused){
+    min-height: 400px;
+}
+
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+    min-height: 400px;
 }

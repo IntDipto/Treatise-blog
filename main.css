@@ -488,3 +488,10 @@ responsive for homepage
 .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
     min-height: 400px;
 }
+.fr-second-toolbar{
+    display: none;
+}
+.fr-box.fr-basic.fr-top .fr-wrapper {
+    @apply border-b-[2px] border-b-text/20 rounded-b-lg
+   
+  }

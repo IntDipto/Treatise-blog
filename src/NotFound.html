@@ -10,13 +10,13 @@
     <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body>
-     <!--==============
-     header part html 
+    <!--==============
+    header part html 
     ===============-->
-    <header id="header-nav" class="bg-[#ffffff] fixed top-0 w-full z-30">
+    <header id="header-nav" class="bg-[#fff] fixed top-0 w-full z-30">
         <nav class="">
-            <div class="px-6 py-5 flex justify-between border-b border-primary items-center h-[56px] sm:h-fit ">
-                <a href="../index.html">
+            <div class="px-6 py-5 flex justify-between border-b border-primary items-center h-[56px] sm:h-[87px] ">
+                <a class="nav-icon" href="../index.html">
                     <svg class="w-[101px] h-[28px] sm:w-[141px] sm:h-[40px]" width="141" height="40" viewBox="0 0 141 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.4639 22.7035C12.3479 18.1371 16.8576 13.1441 18.2326 11.6841V10.1208L17.8288 10.5292C17.5383 10.8225 12.2464 16.2103 9.77139 21.5432C9.56856 21.9808 9.38492 22.4176 9.22412 22.8515C8.78191 24.0448 8.51147 25.2142 8.51147 26.2996C8.51147 33.7787 16.9956 35.1729 17.0814 35.1857L17.7283 35.2853L16.5917 33.9943C14.7215 33.5338 9.6252 31.7769 9.6252 26.2987C9.6252 25.5276 9.7787 24.7026 10.0464 23.8483C10.104 23.661 10.4173 22.8543 10.4639 22.7035Z" fill="url(#paint0_linear_322_2)"/>
                         <path d="M4.72983 23.7259C4.72983 21.4536 5.14097 18.9247 6.92806 16.075C7.06327 14.9878 7.32549 13.9225 7.76678 12.9175C4.36529 16.7831 3.56311 20.9493 3.56311 23.725C3.56311 33.6234 12.1541 38.0755 18.2545 38.0755V36.96C12.6383 36.9609 4.72983 32.855 4.72983 23.7259Z" fill="url(#paint1_linear_322_2)"/>
@@ -57,20 +57,42 @@
                         </defs>
                     </svg>
                 </a>
-                <button id="nav-button">
-                    <svg class="w-8 h-8 sm:w-9 sm:h-9" id="show-nav" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 11H11V12H25V11Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M25 25H11V26H25V25Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-    
-                    <svg id="hide-nav" class="hidden w-8 h-8 sm:w-9 sm:h-9" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                        
-                </button>
+
+                <div id="search-box" class="search-field">
+                    <div class="hidden lg:block">
+                        <input class="w-[696px] px-5 py-3 text-sm placeholder:text-sm outline-none border border-text/40 rounded-lg" type="text" placeholder="{{search keyword}}">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div id="search-box-mobile" class="input-box relative h-10 max-w-[50px] w-full rounded-[8px] block lg:hidden bg-[#F2F4F7]">
+                        <input type="text" placeholder="{{search keyword}}">
+                        <span class="icon">
+                            <svg class="uil uil-search search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="#283683" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.4453 16.4438L21.0016 21.0001" stroke="#283683" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <svg class="uil uil-times close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#283683"/>
+                        </svg>
+                    </div>
+                    <button id="nav-button" class="nav-buttons">
+                        <svg class="w-8 h-8 sm:w-9 sm:h-9" id="show-nav" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 11H11V12H25V11Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 25H11V26H25V25Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+        
+                        <svg id="hide-nav" class="hidden w-8 h-8 sm:w-9 sm:h-9" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </button>
+                </div>
+                
             </div>
        
-            <div id="nav-items" class="bg-[#F8F8F8] absolute top-[81px] w-full opacity-0 invisible transition-all duration-300">
+            <div id="nav-items" class="bg-[#F2F4F7] absolute top-[56px] sm:top-[87px] w-full opacity-0 invisible transition-all duration-300">
                 <div class="flex h-full">
                         <div class="left-half w-full sm:w-1/2 flex items-center justify-center sm:border-r transition-all duration-300 ease-in-out relative -top-1/2 opacity-0">
                             <div id="nav-option">
@@ -78,12 +100,13 @@
                                         <li><a href="../index.html">Home</a></li>
                                         <li><a href="./membership.html">Membership</a></li>
                                         <li><a href="./Author.html">Author</a></li>
+                                        <li><a href="./Signin.html">Login</a></li>
                                     </ul>
                             </div>
                         </div>
                         <div class="right-half w-full sm:w-1/2 sm:flex items-center justify-center transition-all duration-300 ease-in-out relative top-1/2 opacity-0 hidden">
                             <div id="nav-description" class="sm:full md:w-[598px] px-5">
-                                <img class="rounded-[10px] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl-full" src="../assets/nav-img.png" alt="">
+                                <img class="rounded-[10px] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl-full"  src="../assets/images/nav-img.png" alt="">
                                 <p class="flex gap-x-2 text-sm mt-5">
                                     <span class="text-primary">#Career & Growth</span>
                                     <span class="text-text">|</span>
@@ -107,28 +130,8 @@
         ===============-->
         <div class="flex justify-center items-center mx-[5%]">
             <div class="error-part flex flex-col items-center">
-                <svg class="w-[200px] sm:w-[240px] md:w-[315px] h-[85px] sm:h-[130px] md:h-[135px]" width="315" height="135" viewBox="0 0 315 135" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0_25_417" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="315" height="135">
-                    <path d="M58.794 109.316H5.94366L0 100.166C8.24616 84.8633 22.9714 51.4744 44.1758 0H49.4769L70.842 10.7551L31.3247 85.3983L24.0959 96.1534L58.9547 93.9061L61.2036 64.6908L80.9623 63.2461V92.3008L100.239 91.1772V109.316H80.9623V135H58.794V109.316Z" fill="black"/>
-                    <path d="M155.322 110.922C141.614 110.922 131.012 106.587 123.515 97.9191C116.019 89.1439 112.271 76.6766 112.271 60.5172C112.271 48.9596 114.412 39.2747 118.696 31.4625C122.98 23.5434 128.709 17.7111 135.885 13.9655C143.06 10.113 150.985 8.18668 159.659 8.18668C173.367 8.18668 183.862 12.4673 191.145 21.0285C198.534 29.4828 202.229 41.843 202.229 58.1094C202.229 69.6671 200.087 79.4055 195.803 87.3246C191.626 95.2438 186.004 101.183 178.936 105.143C171.868 108.995 163.996 110.922 155.322 110.922ZM157.41 100.488C163.086 100.488 167.316 97.17 170.101 90.5351C172.885 83.9001 174.277 73.7872 174.277 60.1962C174.277 50.0297 173.688 41.9501 172.51 35.9572C171.439 29.9643 169.672 25.6302 167.209 22.9548C164.746 20.1724 161.426 18.7812 157.25 18.7812C145.898 18.7812 140.222 31.9976 140.222 58.4304C140.222 73.3056 141.561 84.0606 144.238 90.6956C146.915 97.2235 151.306 100.488 157.41 100.488Z" fill="black"/>
-                    <path d="M273.555 109.316H220.705L214.761 100.166C223.007 84.8633 237.732 51.4744 258.937 0H264.238L285.603 10.7551L246.086 85.3983L238.857 96.1534L273.716 93.9061L275.965 64.6908L295.723 63.2461V92.3008L315 91.1772V109.316H295.723V135H273.555V109.316Z" fill="black"/>
-                    </mask>
-                    <g mask="url(#mask0_25_417)">
-                    <path d="M367.852 -10H764V156H367.852V-10Z" fill="url(#paint0_radial_25_417)"/>
-                    <path d="M367.852 -10H0V156H367.852V-10Z" fill="url(#paint1_radial_25_417)"/>
-                    </g>
-                    <defs>
-                    <radialGradient id="paint0_radial_25_417" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377.562 168.801) rotate(-156.372) scale(412.111 170.438)">
-                    <stop stop-color="#3762E0"/>
-                    <stop offset="1" stop-color="#E63A63"/>
-                    </radialGradient>
-                    <radialGradient id="paint1_radial_25_417" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377.562 168.801) rotate(-156.372) scale(412.111 170.438)">
-                    <stop stop-color="#3762E0"/>
-                    <stop offset="1" stop-color="#E63A63"/>
-                    </radialGradient>
-                    </defs>
-                </svg>
-                <p class="text-2xl sm:text-[48px] font-bold text-center mt-10 sm:mt-8">Page Not Found</p>
+                <h2 class="text-[60px] sm:text-[90px] md:text-[120px] font-black animate-charcter">404</h2>
+                <p class="text-2xl sm:text-[48px] font-bold text-center mt-5 sm:mt-8">Page Not Found</p>
                 <p class="text-base sm:text-xl font-normal w-full md:w-[755px] text-center mt-6 sm:mt-10 text-text-60 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue pretium faucibus leo nisl nulla pharetra nullam.</p>
                 <button class="mt-10 sm:mt-[75px] px-8 py-3 bg-primary-20 rounded-lg text-primary font-bold leading-[150%]"><a href="../index.html">back to home</a></button>
             </div>
@@ -137,6 +140,8 @@
 
 
     <script src="../src/js/jquery-3.6.1.min.js"></script>
-    <script src="../src/js/script.js"></script>
+    <!-- <script src="../src/js/script.js"></script> -->
+    <script src="./../assets/js/script.js"></script>
+    <script src="./js/customSearch.js"></script>
 </body>
 </html>

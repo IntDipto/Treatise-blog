@@ -11,12 +11,12 @@
 </head>
 <body>
     <!--==============
-     header part html 
+    header part html 
     ===============-->
-    <header id="header-nav" class="bg-[#ffffff] fixed top-0 w-full z-30">
+    <header id="header-nav" class="bg-[#fff] fixed top-0 w-full z-30">
         <nav class="">
-            <div class="px-6 py-5 flex justify-between border-b border-primary items-center h-[56px] sm:h-fit ">
-                <a href="../index.html">
+            <div class="px-6 py-5 flex justify-between border-b border-primary items-center h-[56px] sm:h-[87px] ">
+                <a class="nav-icon" href="../index.html">
                     <svg class="w-[101px] h-[28px] sm:w-[141px] sm:h-[40px]" width="141" height="40" viewBox="0 0 141 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.4639 22.7035C12.3479 18.1371 16.8576 13.1441 18.2326 11.6841V10.1208L17.8288 10.5292C17.5383 10.8225 12.2464 16.2103 9.77139 21.5432C9.56856 21.9808 9.38492 22.4176 9.22412 22.8515C8.78191 24.0448 8.51147 25.2142 8.51147 26.2996C8.51147 33.7787 16.9956 35.1729 17.0814 35.1857L17.7283 35.2853L16.5917 33.9943C14.7215 33.5338 9.6252 31.7769 9.6252 26.2987C9.6252 25.5276 9.7787 24.7026 10.0464 23.8483C10.104 23.661 10.4173 22.8543 10.4639 22.7035Z" fill="url(#paint0_linear_322_2)"/>
                         <path d="M4.72983 23.7259C4.72983 21.4536 5.14097 18.9247 6.92806 16.075C7.06327 14.9878 7.32549 13.9225 7.76678 12.9175C4.36529 16.7831 3.56311 20.9493 3.56311 23.725C3.56311 33.6234 12.1541 38.0755 18.2545 38.0755V36.96C12.6383 36.9609 4.72983 32.855 4.72983 23.7259Z" fill="url(#paint1_linear_322_2)"/>
@@ -57,20 +57,42 @@
                         </defs>
                     </svg>
                 </a>
-                <button id="nav-button">
-                    <svg class="w-8 h-8 sm:w-9 sm:h-9" id="show-nav" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 11H11V12H25V11Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M25 25H11V26H25V25Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-    
-                    <svg id="hide-nav" class="hidden w-8 h-8 sm:w-9 sm:h-9" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                        
-                </button>
+
+                <div id="search-box" class="search-field">
+                    <div class="hidden lg:block">
+                        <input class="w-[696px] px-5 py-3 text-sm placeholder:text-sm outline-none border border-text/40 rounded-lg" type="text" placeholder="{{search keyword}}">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div id="search-box-mobile" class="input-box relative h-10 max-w-[50px] w-full rounded-[8px] block lg:hidden bg-[#F2F4F7]">
+                        <input type="text" placeholder="{{search keyword}}">
+                        <span class="icon">
+                            <svg class="uil uil-search search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="#283683" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.4453 16.4438L21.0016 21.0001" stroke="#283683" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <svg class="uil uil-times close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#283683"/>
+                        </svg>
+                    </div>
+                    <button id="nav-button" class="nav-buttons">
+                        <svg class="w-8 h-8 sm:w-9 sm:h-9" id="show-nav" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 11H11V12H25V11Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 25H11V26H25V25Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+        
+                        <svg id="hide-nav" class="hidden w-8 h-8 sm:w-9 sm:h-9" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 18H7V19H29V18Z" stroke="#283683" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </button>
+                </div>
+                
             </div>
        
-            <div id="nav-items" class="bg-[#F8F8F8] absolute top-[81px] w-full opacity-0 invisible transition-all duration-300">
+            <div id="nav-items" class="bg-[#F2F4F7] absolute top-[56px] sm:top-[87px] w-full opacity-0 invisible transition-all duration-300">
                 <div class="flex h-full">
                         <div class="left-half w-full sm:w-1/2 flex items-center justify-center sm:border-r transition-all duration-300 ease-in-out relative -top-1/2 opacity-0">
                             <div id="nav-option">
@@ -78,6 +100,7 @@
                                         <li><a href="../index.html">Home</a></li>
                                         <li><a href="./membership.html">Membership</a></li>
                                         <li><a href="./Author.html">Author</a></li>
+                                        <li><a href="./Signin.html">Login</a></li>
                                     </ul>
                             </div>
                         </div>
@@ -206,7 +229,7 @@
                         <p class="mt-6 sm:mt-4 text-base sm:text-xl leading-[30px] text-center lg:text-left">Start your day with treatise</p>
                     </div>
                     <div class="">
-                        <button class="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button>
+                        <a href="./SubscribeMemberShip.html"><button class="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button></a>
                     </div>
                 </div>
             </div>
@@ -264,10 +287,11 @@
            </button>
             <div class="lg:block hidden absolute left-1/2 -translate-x-1/2">
                 <ul class="flex gap-x-8 text-text">
-                    <li class="cursor-pointer"><a href="../index.html"></a>Home</li>
-                    <li class="cursor-pointer"><a href="./membership.html">Membership</a></li>
-                    <li class="cursor-pointer"><a href="./Author.html">Author</a></li>
-                    <li class="cursor-pointer"><a href="./NotFound.html">404 page</a></li>
+                    <li> <a href="../index.html">Home</a></li>
+                    <!-- <li class="cursor-pointer"><a href=".././index.html"></a>Home</li> -->
+                    <li><a href="./membership.html">Membership</a></li>
+                    <li><a href="./Author.html">Author</a></li>
+                    <li><a href="./NotFound.html">404 page</a></li>
                 </ul>
             </div>
             <div class="mt-4 lg:mt-0">
@@ -321,6 +345,7 @@
     <!-- js files linked here -->
     <script src="./../assets/js/jquery-3.6.1.min.js"></script>
     <script src="./../assets/js/script.js"></script>
+    <script src="./js/customSearch.js"></script>
 
     
 </body>

@@ -8,27 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- for text editor  -->
-    <link rel="stylesheet" href="./Editor/css/froala_editor.css">
-    <link rel="stylesheet" href="./Editor/css/froala_style.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/code_view.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/draggable.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/colors.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/emoticons.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/image_manager.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/image.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/line_breaker.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/table.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/char_counter.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/video.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/fullscreen.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/file.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/quick_insert.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/help.css">
-    <link rel="stylesheet" href="./Editor/css/third_party/spell_checker.css">
-    <link rel="stylesheet" href="./Editor/css/plugins/special_characters.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/richtext.min.css">
     <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body>
@@ -205,10 +186,10 @@
                 </div>
         </div>
 
-        <div id="editor" class="mx-[15%] mt-24">
-            <div id="edit">
-                Your editable content goes here
-            </div>
+        <div id="editor" class="mx-4 md:mx-[15%] mt-24">
+            <form method="post">
+                <textarea class="content" name="example"></textarea>
+              </form>
         </div>
 
     </main>
@@ -218,7 +199,7 @@
     =========-->
     <footer class="mt-16">
         <div class="flex flex-col lg:flex-row justify-between items-center mx-8 py-6 border-0 lg:border-b relative">
-            <a href="index.html">
+            <a href="../index.html">
                 <svg width="141" height="40" viewBox="0 0 141 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.4639 22.7036C12.3479 18.1372 16.8576 13.1441 18.2326 11.6841V10.1209L17.8288 10.5293C17.5383 10.8226 12.2464 16.2103 9.77139 21.5433C9.56856 21.9809 9.38492 22.4176 9.22412 22.8516C8.78191 24.0448 8.51147 25.2143 8.51147 26.2997C8.51147 33.7788 16.9956 35.173 17.0814 35.1858L17.7283 35.2853L16.5917 33.9944C14.7215 33.5339 9.6252 31.777 9.6252 26.2988C9.6252 25.5277 9.7787 24.7026 10.0464 23.8484C10.104 23.6611 10.4173 22.8543 10.4639 22.7036Z" fill="url(#paint0_linear_339_1181)"/>
                     <path d="M4.72983 23.7259C4.72983 21.4537 5.14097 18.9247 6.92806 16.0751C7.06327 14.9879 7.32549 13.9226 7.76678 12.9176C4.36529 16.7832 3.56311 20.9494 3.56311 23.725C3.56311 33.6234 12.1541 38.0756 18.2545 38.0756V36.96C12.6383 36.961 4.72983 32.855 4.72983 23.7259Z" fill="url(#paint1_linear_339_1181)"/>
@@ -261,10 +242,10 @@
             </a>
             <div class="lg:block hidden absolute left-1/2 -translate-x-1/2">
                 <ul class="flex gap-x-8 text-text">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./src/membership.html">Membership</a></li>
-                    <li><a href="./src/Author.html">Author</a></li>
-                    <li><a href="./src/NotFound.html">404 page</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./membership.html">Membership</a></li>
+                    <li><a href="./Author.html">Author</a></li>
+                    <li><a href="./NotFound.html">404 page</a></li>
                 </ul>
             </div>
             <div class="mt-4 lg:mt-0">
@@ -296,16 +277,16 @@
 
         <div class="flex justify-between lg:justify-center mt-6 mx-[6%] lg:mx-0 border-b lg:border-0 pb-10 lg:pb-0">
             <ul class="flex flex-col lg:flex-row gap-y-6 lg:gap-x-8 text-text lg:hidden h-fit text-sm md:text-base">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="/src/membership.html">Membership</a></li>
-                <li><a href="/src/Author.html">Author</a></li>
-                <li><a href="/src/NotFound.html">404 page</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./membership.html">Membership</a></li>
+                <li><a href="./Author.html">Author</a></li>
+                <li><a href="./NotFound.html">404 page</a></li>
             </ul>
    
             <ul class="text-text flex flex-col lg:flex-row justify-between gap-y-6 lg:gap-x-8 h-fit text-sm md:text-base text-right">
-                <li><a href="./src/TermsOfCondition.html">Terms & Conditions</a></li>
-                <li><a href="./src/TermsOfCondition.html">Privacy Policy</a></li>
-                <li><a href="./src/TermsOfCondition.html">Payment method</a></li>
+                <li><a href="./TermsOfCondition.html">Terms & Conditions</a></li>
+                <li><a href="./TermsOfCondition.html">Privacy Policy</a></li>
+                <li><a href="./TermsOfCondition.html">Payment method</a></li>
             </ul>
         </div>
 
@@ -317,54 +298,12 @@
     
     
     <script src="./../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.richtext.min.js"></script>
     <script src="./../assets/js/script.js"></script>
     <script src="./js/customSearch.js"></script>
-    <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-    <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.7/purify.min.js"></script>
-
-    <script type="text/javascript" src="./Editor/js/froala_editor.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/align.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/char_counter.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/code_beautifier.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/code_view.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/colors.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/draggable.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/emoticons.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/entities.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/file.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/font_size.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/font_family.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/fullscreen.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/image.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/image_manager.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/line_breaker.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/inline_style.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/link.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/lists.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/paragraph_format.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/paragraph_style.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/quick_insert.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/quote.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/table.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/save.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/url.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/video.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/help.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/print.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/third_party/spell_checker.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/special_characters.min.js"></script>
-    <script type="text/javascript" src="./Editor/js/plugins/word_paste.min.js"></script>
-
     <script>
-        (function () {
-        new FroalaEditor("#edit")
-        })()
+        $('.content').richText();
     </script>
-    
 
-    
 </body>
 </html>

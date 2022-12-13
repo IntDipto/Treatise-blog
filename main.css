@@ -217,7 +217,9 @@ body {
 .error-part button {
     font-family: 'Arima Madurai', cursive;
 }
-
+.terms-condition-footer{
+    background-color: #F5F5F5;
+}
 
 /* ============================
     terms of services page 

@@ -1447,10 +1447,6 @@ video {
   background-image: url('../assets/images/All-blog/all-blog-banner.webp');
 }
 
-.bg-\[url\(\'\.\.\/assets\/images\/Author\/subscribe\.webp\'\)\] {
-  background-image: url('../assets/images/Author/subscribe.webp');
-}
-
 .bg-\[url\(\'\.\.\/assets\/images\/bg\.webp\'\)\] {
   background-image: url('../assets/images/bg.webp');
 }
@@ -2222,6 +2218,10 @@ body {
 
 .error-part button {
   font-family: 'Arima Madurai', cursive;
+}
+
+.terms-condition-footer{
+  background-color: #F5F5F5;
 }
 
 /* ============================

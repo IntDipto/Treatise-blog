@@ -513,40 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .visible {
   visibility: visible;
 }
@@ -623,10 +589,6 @@ video {
   right: 1rem;
 }
 
-.top-\[81px\] {
-  top: 81px;
-}
-
 .bottom-1 {
   bottom: 0.25rem;
 }
@@ -649,18 +611,6 @@ video {
 
 .\!top-0 {
   top: 0px !important;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.left-1 {
-  left: 0.25rem;
 }
 
 .z-30 {
@@ -974,10 +924,6 @@ video {
 
 .h-\[280px\] {
   height: 280px;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .max-h-\[840px\] {
@@ -1513,8 +1459,12 @@ video {
   background-image: url('../assets/images/bg.webp');
 }
 
-.bg-\[url\(\'\.\.\/assets\/Terms-Of-Conditons\/banner\.png\'\)\] {
-  background-image: url('../assets/Terms-Of-Conditons/banner.png');
+.bg-\[url\(\'\.\.\/assets\/images\/Author\/Subscribe\.webp\'\)\] {
+  background-image: url('../assets/images/Author/Subscribe.webp');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/Author\/Subscribe\.webp\'\)\] {
+  background-image: url('./../assets/images/Author/Subscribe.webp');
 }
 
 .p-4 {
@@ -1527,18 +1477,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-11 {
-  padding: 2.75rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-6 {
@@ -1756,21 +1694,13 @@ video {
   font-size: 48px;
 }
 
-.text-\[110px\] {
-  font-size: 110px;
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-\[120px\] {
-  font-size: 120px;
-}
-
-.text-\[60px\] {
-  font-size: 60px;
 }
 
 .font-bold {
@@ -1929,12 +1859,6 @@ video {
 
 .outline {
   outline-style: solid;
-}
-
-.ring {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .blur {
@@ -2721,10 +2645,6 @@ responsive for homepage
     bottom: 1rem;
   }
 
-  .sm\:top-\[80px\] {
-    top: 80px;
-  }
-
   .sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -3079,16 +2999,16 @@ responsive for homepage
     line-height: 1rem;
   }
 
+  .sm\:text-\[90px\] {
+    font-size: 90px;
+  }
+
   .sm\:text-\[48px\] {
     font-size: 48px;
   }
 
   .sm\:text-\[30px\] {
     font-size: 30px;
-  }
-
-  .sm\:text-\[90px\] {
-    font-size: 90px;
   }
 
   .sm\:leading-\[40px\] {
@@ -3336,12 +3256,12 @@ responsive for homepage
     font-size: 32px;
   }
 
-  .md\:text-\[40px\] {
-    font-size: 40px;
-  }
-
   .md\:text-\[120px\] {
     font-size: 120px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .md\:leading-\[60px\] {
@@ -3356,10 +3276,6 @@ responsive for homepage
 
   .lg\:left-\[427px\] {
     left: 427px;
-  }
-
-  .lg\:top-\[87px\] {
-    top: 87px;
   }
 
   .lg\:mx-20 {

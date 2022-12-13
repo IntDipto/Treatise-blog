@@ -1467,6 +1467,22 @@ video {
   background-image: url('./../assets/images/Author/Subscribe.webp');
 }
 
+.bg-\[url\(\'\.\/assets\/images\/Author\/subscribe\.webp\'\)\] {
+  background-image: url('./assets/images/Author/subscribe.webp');
+}
+
+.bg-\[url\(\'\/assets\/images\/Author\/subscribe\.webp\'\)\] {
+  background-image: url('/assets/images/Author/subscribe.webp');
+}
+
+.bg-\[url\(\'assets\/images\/Author\/subscribe\.webp\'\)\] {
+  background-image: url('assets/images/Author/subscribe.webp');
+}
+
+.bg-\[url\(\'\\\/assets\/images\/Author\/subscribe\.webp\'\)\] {
+  background-image: url('\/assets/images/Author/subscribe.webp');
+}
+
 .p-4 {
   padding: 1rem;
 }

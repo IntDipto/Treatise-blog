@@ -1443,8 +1443,8 @@ video {
   background-color: rgb(110 118 125 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/images\/Author\/subscribe\.webp\'\)\] {
-  background-image: url('/assets/images/Author/subscribe.webp');
+.bg-\[url\(\'\.\/assets\/images\/Author\/subscribe\.webp\'\)\] {
+  background-image: url('./assets/images/Author/subscribe.webp');
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/All-blog\/all-blog-banner\.webp\'\)\] {

@@ -13,6 +13,21 @@
     <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body>
+    <!-- ================ 
+    loader 
+    ================= -->
+    <div id="preloader" class="loader flex items-center justify-center">
+        <div class="w-[300px]">
+         <lottie-player
+         src="../assets/images/loader.json"
+         background="transparent"
+         speed="1"
+         loop
+         autoplay
+       ></lottie-player>
+        </div>
+     </div>
+     
     <!--==============
     header part html 
     ===============-->
@@ -301,7 +316,11 @@
     <script src="./js/jquery.richtext.min.js"></script>
     <script src="./../assets/js/script.js"></script>
     <script src="./js/customSearch.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
+        // loader 
+        $(".loader").fadeTo(1500, 1).fadeOut(300);
+
         $('.content').richText();
     </script>
 

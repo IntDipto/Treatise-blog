@@ -15,6 +15,17 @@
 </head>
 
 <body>
+    <div id="preloader" class="loader flex items-center justify-center">
+       <div class="w-[300px]">
+        <lottie-player
+        src="./assets/images/loader.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+       </div>
+    </div>
     <!--==============
     header part html 
     ===============-->
@@ -715,7 +726,12 @@
      <script src="./src/js/owl.carousel.min.js"></script>
      <script src="./assets/js/script.js"></script>
      <script src="./src/js/customSearch.js"></script>
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
      <script>
+        
+        // loader 
+        $(".loader").fadeTo(1500, 1).fadeOut(300);
+
          // owl caurosel 
          $(document).ready(function(){
              $(".owl-carousel").owlCarousel();
@@ -751,16 +767,9 @@
                  }
              }
          })
- 
-         // packery gird styling 
-        //  $(document).ready(function(){
-        //     $('.items-container').packery({
-        //         itemSelector: '.items',
-        //     });
-        //  })
-         
- 
 
+        
+ 
         //  Isotope for filter
         var $grid = $('.items-container').isotope({
         });
@@ -772,8 +781,9 @@
         $grid.isotope({ filter: filterValue });
         });
 
- 
      </script>
+
+    
 
 </body>
 

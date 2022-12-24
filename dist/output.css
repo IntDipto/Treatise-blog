@@ -601,6 +601,10 @@ video {
   bottom: 2rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .left-6 {
   left: 1.5rem;
 }
@@ -611,10 +615,6 @@ video {
 
 .\!top-0 {
   top: 0px !important;
-}
-
-.right-3 {
-  right: 0.75rem;
 }
 
 .z-30 {

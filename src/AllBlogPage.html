@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/nice-select.css">
     <link href="../dist/output.css" rel="stylesheet">
 </head>
@@ -216,7 +216,10 @@
                     <div class="flex flex-col gap-y-2 w-full md:w-fit">
                         <label class="text-sm md:text-base" for="author_tag">Time</label>
                         <div class="relative">
-                            <input id="flatpickr" class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="date" placeholder="All Time">
+                            <div class="input-group datepicker">
+                                <input type="text" class="form-control w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" data-input aria-describedby="date1">
+                            </div>
+                            <!-- <input id="flatpickr" class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="date" placeholder="All Time"> -->
                             <span class="absolute right-4 top-1/2 -translate-y-1/2">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.4">
@@ -669,10 +672,6 @@
         // loader 
         $(".loader").fadeTo(1500, 1).fadeOut(300); 
 
-        // custome date picker 
-        var example = flatpickr('#flatpickr');
-
-
         //  Isotope for filter
         var $grid = $('.items-container').isotope({
         });
@@ -692,6 +691,34 @@
         $(document).ready(function() {
         $('select').niceSelect();
       })
+    </script>
+
+    <!-- custom date picker  -->
+    <script>
+        jQuery(function() {
+            initDatePicker();
+        });
+
+        checkIfTodaySelected = function (selDate, dateStr, fp){
+            let today = new Date().toLocaleDateString();
+            let selDateDay = new Date(selDate).toLocaleDateString();
+            if (selDateDay === today) {
+            fp._input.value="Today"
+            }
+        }
+
+        function initDatePicker() {
+        const fp = jQuery(".datepicker").flatpickr({
+                wrap: true,
+                altInput: true,
+            allowInput: false, // if doesn't need - disable it.
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+                defaultDate: "today",
+            onReady: checkIfTodaySelected,
+            onValueUpdate: checkIfTodaySelected   
+            }); 
+        }
     </script>
 
    

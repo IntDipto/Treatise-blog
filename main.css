@@ -36,46 +36,46 @@ body {
 /* custom search bar  */
 .input-box {
     transition: all 0.6s cubic-bezier(0.58, 0, 0.5, 1);
-  }
-  .input-box.open {
+}
+.input-box.open {
     max-width: 320px;
     margin-right: 26px !important;
-  }
-  .input-box input {
+}
+.input-box input {
     @apply relative outline-none h-full w-full rounded-[8px] text-sm;
     margin-right: 26px !important;
-  }
-  .input-box.open {
+}
+.input-box.open {
     @apply border;
     padding: 0 0 0 50px;
     margin-right: 26px !important;
-  }
-  .icon {
+}
+.icon {
     @apply absolute h-full top-0 left-0 w-[50px] rounded-[8px] flex justify-center bg-white;
-  }
-  .search-icon {
+}
+.search-icon {
     @apply absolute top-1/2 text-sm;
     transition: all 0.6s cubic-bezier(0.58, 0, 0.12, 1);
-  }
-  .close-icon {
+}
+.close-icon {
     @apply absolute top-1/2 text-sm;
     transition: all 0.1s cubic-bezier(0.58, 0, 0.12, 1);
-  }
-  .search-icon {
+}
+.search-icon {
     color: #5c77ff;
     transform: translateY(-50%) rotate(90deg);
-  }
-  .input-box.open .search-icon {
+}
+.input-box.open .search-icon {
     transform: translateY(-50%) rotate(0);
-  }
-  .close-icon {
+}
+.close-icon {
     @apply text-white opacity-0 cursor-pointer -translate-y-1/2 -right-8;
-  }
-  .input-box.open .close-icon {
+}
+.input-box.open .close-icon {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(-50%) rotate(180deg);
-  }
+}
 
 /*===============
     homepage

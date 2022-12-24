@@ -12,10 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
-  <link rel="stylesheet" href="/assets/index.a1b01d10.css">
+  <link rel="stylesheet" href="/assets/index.87f64804.css">
 </head>
 
 <body>
+    <div id="preloader" class="loader flex items-center justify-center">
+       <div class="w-[300px]">
+        <lottie-player
+        src="./assets/images/loader.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+       </div>
+    </div>
     <!--==============
     header part html 
     ===============-->
@@ -112,7 +123,7 @@
                         </div>
                         <div class="right-half w-full sm:w-1/2 sm:flex items-center justify-center transition-all duration-300 ease-in-out relative top-1/2 opacity-0 hidden">
                             <div id="nav-description" class="sm:full md:w-[598px] px-5">
-                                <img class="rounded-[10px] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl-full"  src="../assets/images/nav-img.png" alt="">
+                                <img class="rounded-[10px] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl-full"  src="/assets/nav-img.764824f5.png" alt="">
                                 <p class="flex gap-x-2 text-sm mt-5">
                                     <span class="text-primary">#Career & Growth</span>
                                     <span class="text-text">|</span>
@@ -598,7 +609,7 @@
                         <p class="mt-6 sm:mt-4 text-base sm:text-xl leading-[30px] text-center lg:text-left">Start your day with treatise</p>
                     </div>
                     <div class="">
-                        <button class="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button>
+                        <a href="./src/SubscribeMemberShip.html"><button class="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button></a>
                     </div>
                 </div>
             </div>
@@ -716,7 +727,12 @@
      <script src="./src/js/owl.carousel.min.js"></script>
      <script src="./assets/js/script.js"></script>
      <script src="./src/js/customSearch.js"></script>
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
      <script>
+        
+        // loader 
+        $(".loader").fadeTo(1500, 1).fadeOut(300);
+
          // owl caurosel 
          $(document).ready(function(){
              $(".owl-carousel").owlCarousel();
@@ -752,16 +768,9 @@
                  }
              }
          })
- 
-         // packery gird styling 
-        //  $(document).ready(function(){
-        //     $('.items-container').packery({
-        //         itemSelector: '.items',
-        //     });
-        //  })
-         
- 
 
+        
+ 
         //  Isotope for filter
         var $grid = $('.items-container').isotope({
         });
@@ -773,8 +782,9 @@
         $grid.isotope({ filter: filterValue });
         });
 
- 
      </script>
+
+    
 
 </body>
 

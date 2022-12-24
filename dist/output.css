@@ -613,6 +613,10 @@ video {
   top: 0px !important;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .z-30 {
   z-index: 30;
 }

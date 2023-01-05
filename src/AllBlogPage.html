@@ -210,7 +210,12 @@
 
                     <div class="flex flex-col gap-y-2 w-full md:w-fit">
                         <label class="text-sm md:text-base" for="author_tag">Timeframe</label>
-                        <input class="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="text" placeholder="Timeframe">
+                        <select className="h-[50px] text-text-40 font-bold w-full md:w-[480px] outline-none bg-[#F8F8F8] rounded-[8px] border-2 placeholder:text-text-40 px-4">
+                            <option value="sort">Select Timeframe</option>
+                            <option value="New">Below 5 mins</option>
+                            <option value="Popular">6-10 mins</option>
+                            <option value="Featured">Above 10 mins</option>
+                        </select>
                     </div>
 
                     <div class="flex flex-col gap-y-2 w-full md:w-fit">
